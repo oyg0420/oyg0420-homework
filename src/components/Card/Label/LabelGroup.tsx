@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FlexDirection, LabelGroupProps } from './types';
+import { FlexDirection, LabelGroupProps } from '../types';
 
 const StyleLabelGroup = styled.div<{ flexDirection: FlexDirection }>`
   display: flex;

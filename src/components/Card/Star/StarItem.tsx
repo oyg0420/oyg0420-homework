@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StarItemProps } from './types';
+import { StarItemProps } from '../types';
 import classNames from 'classnames';
 
 const StyledStarItem = styled.li`

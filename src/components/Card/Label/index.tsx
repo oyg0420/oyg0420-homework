@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import classNames from 'classnames';
-import { CardLabelProps } from './types';
+import { CardLabelProps } from '../types';
 
 const StyledLabel = styled.span`
   &.theme-default {

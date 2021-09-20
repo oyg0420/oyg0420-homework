@@ -10,7 +10,7 @@ import { CardComponent } from './types';
 import classNames from 'classnames';
 import CardContext from './CardContext';
 import Star from './Star';
-import LabelGroup from './LabelGroup';
+import LabelGroup from './Label/LabelGroup';
 
 const CardContainer = styled.div`
   display: flex;

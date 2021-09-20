@@ -1,7 +1,7 @@
 import React from 'react';
 import StarItem from './StarItem';
 import StarList from './StarList';
-import { StartProps } from './types';
+import { StartProps } from '../types';
 
 const Start: React.FC<StartProps> = ({ totalScore, currentScore }) => {
   return (
