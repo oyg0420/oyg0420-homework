@@ -45,6 +45,9 @@ yarn start
 │   │       │   └── useForm.ts
 │   │       └── index.tsx
 │   └── pages
-│       ├── CardPage.tsx
-│       └── InputFormPage.tsx
+│       ├── Homework1.tsx
+│       └── Homework2.tsx
+├── images
+│   └── default-image.jpg
+├── index.tsx
 ```
