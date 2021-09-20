@@ -11,7 +11,7 @@ yarn install
 yarn start
 ```
 3. 디렉토리 구조
-```javascript
+```
 ├── App.tsx
 ├── components
 │   ├── modules
