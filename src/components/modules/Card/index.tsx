@@ -16,6 +16,9 @@ const CardContainer = styled.div`
   display: flex;
   flex: none;
   margin: 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+
   &.horizon {
     flex-direction: row;
   }
@@ -23,9 +26,6 @@ const CardContainer = styled.div`
   &.vertical {
     flex-direction: column;
   }
-
-  border: 1px solid gray;
-  border-radius: 4px;
 
   &.vertical {
     width: 200px;

@@ -12,6 +12,7 @@ const Star = styled.div`
   height: 15px;
   border-radius: 50%;
   background-color: gray;
+
   &.active {
     background-color: orange;
   }
