@@ -25,7 +25,7 @@ type VariatyFormType = {
 
 const InputFormPage: React.FC = () => {
   const { register, formState } = useForm<FormType>({
-    defaultMode: '기본 값',
+    defaultMode: '기본 값입니다.',
   });
 
   const { register: registerVariaty } = useForm<VariatyFormType>({
@@ -36,7 +36,9 @@ const InputFormPage: React.FC = () => {
 
   return (
     <InputFormPageContainer>
+      <h1>과제2</h1>
       <InputForm>
+        <h4>입력 중 상태 - 내용 변경 시 Save 버튼이 활성화 됩니다. (내용이 초기 값과 같으면 Save 버튼 비활성화)</h4>
         <FlexBox>
           <TextareaController
             {...register('defaultMode', {
@@ -51,6 +53,7 @@ const InputFormPage: React.FC = () => {
         </FlexBox>
       </InputForm>
       <InputForm>
+        <h4> default 상태 - 내용이 없으면 placeholder 처리</h4>
         <TextareaController
           placeholder="값이 존재하지 않습니다."
           {...registerVariaty('placeholderMode', {
@@ -59,6 +62,7 @@ const InputFormPage: React.FC = () => {
             },
           })}
         />
+        <h4> disabled 비활성화 상태 - 입력 불가 상태</h4>
         <TextareaController
           {...registerVariaty('disabledMode', {
             rules: {
@@ -67,6 +71,7 @@ const InputFormPage: React.FC = () => {
           })}
           disabled
         />
+        <h4>readonly 읽기 전용 상태 - 입력 불가</h4>
         <TextareaController
           {...registerVariaty('readonlyMode', {
             rules: {
