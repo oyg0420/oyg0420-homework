@@ -53,9 +53,7 @@ const CardContainer = styled.div`
 const Card: CardComponent = ({ mode = 'vertical', children }) => {
   return (
     <CardContext.Provider value={{ mode }}>
-      <CardContainer className={classNames({ [mode]: true })}>
-        {children}
-      </CardContainer>
+      <CardContainer className={classNames({ [mode]: true })}>{children}</CardContainer>
     </CardContext.Provider>
   );
 };

@@ -1,8 +1,8 @@
-import { createContext } from 'react'
-import { CardContextProps } from './types'
+import { createContext } from 'react';
+import { CardContextProps } from './types';
 
 const CardContext = createContext<CardContextProps>({
   mode: 'vertical',
-})
+});
 
-export default CardContext
+export default CardContext;

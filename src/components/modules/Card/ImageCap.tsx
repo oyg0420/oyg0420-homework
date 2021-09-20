@@ -10,11 +10,11 @@ const StyledImageCap = styled.img`
 
 const ImageCapContainer = styled.div<{ mode: Mode }>`
   ${StyledImageCap} {
-    ${(props) => (props.mode === 'vertical' ? 'width: 100%;' : 'height: 100%;')}
+    ${props => (props.mode === 'vertical' ? 'width: 100%;' : 'height: 100%;')}
   }
 `;
 
-const ImageCap: React.FC<ImageCapProps> = (props) => {
+const ImageCap: React.FC<ImageCapProps> = props => {
   const { mode } = useContext(CardContext);
   return (
     <ImageCapContainer mode={mode}>

@@ -29,12 +29,7 @@ const StyledLabel = styled.span`
   }
 `;
 
-const Label: React.FC<CardLabelProps> = ({
-  theme = 'default',
-  status = 'default',
-  size = 'medium',
-  children,
-}) => {
+const Label: React.FC<CardLabelProps> = ({ theme = 'default', status = 'default', size = 'medium', children }) => {
   return (
     <StyledLabel
       className={classNames({

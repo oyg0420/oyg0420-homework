@@ -6,7 +6,7 @@ import { CardTextProps } from './types';
 const StyledText = styled.p<{ maxLines?: number }>`
   color: gray;
   margin: 0;
-  ${(props) =>
+  ${props =>
     props.maxLines
       ? `
     display: -webkit-box;
@@ -29,11 +29,7 @@ const StyledText = styled.p<{ maxLines?: number }>`
   }
 `;
 
-const Text: React.FC<CardTextProps> = ({
-  size = 'medium',
-  maxLines,
-  children,
-}) => {
+const Text: React.FC<CardTextProps> = ({ size = 'medium', maxLines, children }) => {
   return (
     <StyledText
       className={classNames({

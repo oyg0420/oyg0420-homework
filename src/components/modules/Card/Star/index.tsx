@@ -7,9 +7,7 @@ const Start: React.FC<StartProps> = ({ totalScore, currentScore }) => {
   return (
     <StarList>
       {new Array(totalScore).fill(currentScore).map((score, index) => {
-        return (
-          <StarItem key={`star-item-${index}`} active={index <= score - 1} />
-        );
+        return <StarItem key={`star-item-${index}`} active={index <= score - 1} />;
       })}
     </StarList>
   );

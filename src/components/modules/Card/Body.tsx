@@ -9,7 +9,7 @@ const BodyContainer = styled.div<{ mode: Mode }>`
   justify-content: space-between;
   padding: 10px;
 
-  ${(props) => (props.mode === 'vertical' ? ' height: 100px' : 'width: 250px')};
+  ${props => (props.mode === 'vertical' ? ' height: 100px' : 'width: 250px')};
 `;
 
 const Body: React.FC = ({ children }) => {
