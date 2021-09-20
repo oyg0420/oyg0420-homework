@@ -10,7 +10,14 @@ yarn install
 ```javascript
 yarn start
 ```
-3. 디렉토리 구조
+
+### 화면설명
+앱 실행시 노출되는 화면 상단 탭 `전체`, `과제1`, `과제2` 으로 과제물을 확인할 수 있습니다.
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/27759092/133962551-58b49f13-7b0f-4c12-a0c0-d715105bb656.gif)
+
+
+### 디렉토리 구조
 ```
 ├── App.tsx
 ├── components
