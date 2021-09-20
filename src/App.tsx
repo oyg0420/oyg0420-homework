@@ -1,16 +1,19 @@
-import Cards from 'components/pages/Cards';
+import React from 'react';
+import CardPage from 'components/pages/CardPage';
+import InputFormPage from 'components/pages/InputFormPage';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
   padding: 10px;
 `;
 
-function App() {
+const App: React.FC = () => {
   return (
     <AppContainer>
-      <Cards />
+      <CardPage />
+      <InputFormPage />
     </AppContainer>
   );
-}
+};
 
 export default App;

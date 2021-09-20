@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from '../modules/Card';
 
-const CardsContainer = styled.div`
+const CardPageContainer = styled.div`
   display: flex;
 `;
 
-const Cards: React.FC = () => {
+const CardPage: React.FC = () => {
   return (
-    <CardsContainer>
+    <CardPageContainer>
       <Card>
         <Card.ImageCap />
         <Card.Body>
@@ -26,8 +26,8 @@ const Cards: React.FC = () => {
         <Card.Footer>
           <Card.Star totalScore={5} currentScore={3} />
           <Card.Text>
-            Geckos are a group of usually small, usually nocturnal lizards. They
-            are found on every continent except Australia.
+            Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except
+            Australia.
           </Card.Text>
         </Card.Footer>
       </Card>
@@ -48,8 +48,8 @@ const Cards: React.FC = () => {
         </Card.Body>
         <Card.Footer>
           <Card.Text>
-            Geckos are a group of usually small, usually nocturnal lizards. They
-            are found on every continent except Australia.
+            Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except
+            Australia.
           </Card.Text>
         </Card.Footer>
       </Card>
@@ -74,13 +74,11 @@ const Cards: React.FC = () => {
         <Card.ImageCap />
         <Card.Body>
           <Card.Title.H4>
-            Some species live in houses where they hunt insects attracted by
-            artificial light.
+            Some species live in houses where they hunt insects attracted by artificial light.
           </Card.Title.H4>
           <Card.Text maxLines={3}>
-            Geckos are a group of usually small, usually nocturnal lizards. They
-            are found on every continent except Australia. Some species live in
-            houses where they hunt insects attracted by artificial light.
+            Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except
+            Australia. Some species live in houses where they hunt insects attracted by artificial light.
           </Card.Text>
           <Card.LabelGroup>
             <Card.Star totalScore={5} currentScore={3} />
@@ -89,8 +87,8 @@ const Cards: React.FC = () => {
           </Card.LabelGroup>
         </Card.Body>
       </Card>
-    </CardsContainer>
+    </CardPageContainer>
   );
 };
 
-export default Cards;
+export default CardPage;
