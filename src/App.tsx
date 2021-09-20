@@ -10,15 +10,15 @@ const AppContainer = styled.div`
 
 type Homework = 'all' | 'homework1' | 'homework2';
 
-type HomewordListItemProps = {
-  currentHomeword: Homework;
+type HomeworkListItemProps = {
+  currentHomework: Homework;
   homework: Homework;
   onClick(homework: Homework): void;
 };
 
-const HomewordListItem: React.FC<HomewordListItemProps> = ({ currentHomeword, homework, onClick, children }) => {
+const HomeworkListItem: React.FC<HomeworkListItemProps> = ({ currentHomework, homework, onClick, children }) => {
   return (
-    <li className={classNames({ active: homework === currentHomeword })} onClick={() => onClick(homework)}>
+    <li className={classNames({ active: homework === currentHomework })} onClick={() => onClick(homework)}>
       {children}
     </li>
   );
@@ -36,15 +36,15 @@ const App: React.FC = () => {
   return (
     <AppContainer>
       <ul>
-        <HomewordListItem currentHomeword={homework} homework="all" onClick={handleHomeworkClick}>
+        <HomeworkListItem currentHomework={homework} homework="all" onClick={handleHomeworkClick}>
           전체
-        </HomewordListItem>
-        <HomewordListItem currentHomeword={homework} homework="homework1" onClick={handleHomeworkClick}>
+        </HomeworkListItem>
+        <HomeworkListItem currentHomework={homework} homework="homework1" onClick={handleHomeworkClick}>
           과제 1
-        </HomewordListItem>
-        <HomewordListItem currentHomeword={homework} homework="homework2" onClick={handleHomeworkClick}>
+        </HomeworkListItem>
+        <HomeworkListItem currentHomework={homework} homework="homework2" onClick={handleHomeworkClick}>
           과제 2
-        </HomewordListItem>
+        </HomeworkListItem>
       </ul>
       {showPage('homework1') && <Homework1 />}
       {showPage('homework2') && <Homework2 />}
