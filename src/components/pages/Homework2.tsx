@@ -4,7 +4,7 @@ import TextareaController from 'components/modules/InputForm/TextareaController'
 import { useForm } from 'components/modules/InputForm/hook/useForm';
 import styled from 'styled-components';
 
-const InputFormPageContainer = styled.div`
+const Homework1Container = styled.div`
   padding: 10px;
 `;
 
@@ -23,7 +23,7 @@ type VariatyFormType = {
   readonlyMode: string;
 };
 
-const InputFormPage: React.FC = () => {
+const Homework2: React.FC = () => {
   const { register, formState } = useForm<FormType>({
     defaultMode: '기본 값입니다.',
   });
@@ -35,7 +35,7 @@ const InputFormPage: React.FC = () => {
   });
 
   return (
-    <InputFormPageContainer>
+    <Homework1Container>
       <h1>과제2</h1>
       <InputForm>
         <h4>입력 중 상태 - 내용 변경 시 Save 버튼이 활성화 됩니다. (내용이 초기 값과 같으면 Save 버튼 비활성화)</h4>
@@ -81,8 +81,8 @@ const InputFormPage: React.FC = () => {
           readOnly
         />
       </InputForm>
-    </InputFormPageContainer>
+    </Homework1Container>
   );
 };
 
-export default InputFormPage;
+export default Homework2;

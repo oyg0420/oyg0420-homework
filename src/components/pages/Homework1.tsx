@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from '../modules/Card';
 
-const CardPageContainer = styled.div`
+const Homework1Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -13,9 +13,9 @@ const FlexBox = styled.div`
   flex: 1;
 `;
 
-const CardPage: React.FC = () => {
+const Homework1: React.FC = () => {
   return (
-    <CardPageContainer>
+    <Homework1Container>
       <h1>과제1</h1>
       <FlexBox>
         <Card>
@@ -97,8 +97,8 @@ const CardPage: React.FC = () => {
           </Card.Body>
         </Card>
       </FlexBox>
-    </CardPageContainer>
+    </Homework1Container>
   );
 };
 
-export default CardPage;
+export default Homework1;

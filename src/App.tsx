@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react';
-import CardPage from 'components/pages/CardPage';
-import InputFormPage from 'components/pages/InputFormPage';
+import Homework1 from 'components/pages/Homework1';
+import Homework2 from 'components/pages/Homework2';
 import styled from 'styled-components';
 import classNames from 'classnames';
 
@@ -8,7 +8,7 @@ const AppContainer = styled.div`
   padding: 10px;
 `;
 
-type Homework = 'all' | 'card' | 'inputForm';
+type Homework = 'all' | 'homework1' | 'homework2';
 
 type HomewordListItemProps = {
   currentHomeword: Homework;
@@ -39,15 +39,15 @@ const App: React.FC = () => {
         <HomewordListItem currentHomeword={homework} homework="all" onClick={handleHomeworkClick}>
           전체
         </HomewordListItem>
-        <HomewordListItem currentHomeword={homework} homework="card" onClick={handleHomeworkClick}>
+        <HomewordListItem currentHomeword={homework} homework="homework1" onClick={handleHomeworkClick}>
           과제 1
         </HomewordListItem>
-        <HomewordListItem currentHomeword={homework} homework="inputForm" onClick={handleHomeworkClick}>
+        <HomewordListItem currentHomeword={homework} homework="homework2" onClick={handleHomeworkClick}>
           과제 2
         </HomewordListItem>
       </ul>
-      {showPage('card') && <CardPage />}
-      {showPage('inputForm') && <InputFormPage />}
+      {showPage('homework1') && <Homework1 />}
+      {showPage('homework2') && <Homework2 />}
     </AppContainer>
   );
 };
