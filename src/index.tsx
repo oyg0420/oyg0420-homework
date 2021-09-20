@@ -14,8 +14,19 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
+  li + li {
+    margin-left: 10px;
+  }
+
   li {
+    display: inline-block;
     list-style: none;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  li.active {
+    color: blue;
   }
 
   a {
